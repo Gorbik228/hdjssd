@@ -1,4 +1,8 @@
-print("Hello World")
-#изменяю проограмму
-print("Привет Андрей")
-print("Пока" )
+input_data=open('input.txt ','r')
+data = input_data.read()
+k = int(data)
+out = k * 100 + 90 +(9-k)
+output_data=open('output.txt','w')
+output_data.write(str(out))
+input_data.close()
+output_data.close()
